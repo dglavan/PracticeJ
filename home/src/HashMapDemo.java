@@ -52,7 +52,9 @@ public class HashMapDemo {
         }
 
         //Clearing elements
+        System.out.println("\nDo we have Scott value ? " + hm.containsValue("Scott"));
         hm.clear();
         System.out.println("Is HashMap empty after clear? " + hm.isEmpty());
+        System.out.println("Do we have Scott value ? " + hm.containsValue("Scott"));
     }
 }
