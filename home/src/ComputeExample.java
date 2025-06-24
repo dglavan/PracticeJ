@@ -21,5 +21,11 @@ public class ComputeExample {
 
         // Print the map
         System.out.println(userMessages);
+
+        // Using merge()
+        System.out.println("\nBefore merge: " + userMessages);
+        userMessages.merge(2, " Merged this!", (existingVal, valToMerge) -> existingVal.concat(valToMerge));
+        System.out.println("\nAfter merge: " + userMessages);
     }
+
 }
