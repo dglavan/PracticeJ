@@ -22,6 +22,8 @@ public class Palindrome2ndMethod {
                 break;
             }
         }
+        // after i = middle (last verification) - correct - i++ increments again
+        // correct final check condition has to also match i = middle + 1
         if(i == middle+1){
             System.out.println("It's a Palindrome");
         }
