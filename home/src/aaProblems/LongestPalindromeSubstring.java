@@ -18,7 +18,7 @@ public class LongestPalindromeSubstring {
 
             if(len > end - start){
                 // Update start and end based on new max Length
-                start = i - (len -1) / 2; // handles both even and odd cases
+                start = i - (len - 1) / 2; // handles both even and odd cases
                 end = i + len/2;
             }
         }
